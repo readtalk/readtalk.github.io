@@ -1,17 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-  <link rel="stylesheet" href="assets/swagger-ui.css">
+  <meta charset="utf-8">
+  <title>API Viewer</title>
+  <link rel="stylesheet"
+    href="https://unpkg.com/swagger-ui-dist/swagger-ui.css">
 </head>
 <body>
-<div id="swagger-ui"></div>
+<div id="swagger"></div>
 
-<script src="swagger-ui-bundle.js"></script>
+<script src="https://unpkg.com/swagger-ui-dist/swagger-ui-bundle.js"></script>
 <script>
-  SwaggerUIBundle({
-    url: "https://api.readtalk.workers.dev/",
-    dom_id: "#swagger-ui"
-  });
+SwaggerUIBundle({
+  url: "https://api.readtalk.workers.dev/stasic.json",
+  dom_id: "#swagger"
+});
 </script>
 </body>
 </html>
